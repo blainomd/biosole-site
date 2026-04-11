@@ -1,0 +1,19 @@
+# BIO_SOLE.AI
+
+> Smart insoles that measure gait pressure, predict falls, and generate billable RTM data. The hardware layer for clinical gait intelligence.
+
+## What we do
+256 pressure sensors per insole, sampling at 100Hz. Plantar pressure maps reveal asymmetry, instability, and deterioration invisible to the naked eye. Data syncs via Bluetooth to HealthGait, analyzed by Claude AI, attested by physician via ClinicalSwipe. RTM 98975-98981 billable: $94-170/mo per patient.
+
+## Pipeline
+1. Patient walks normally (passive collection)
+2. Bluetooth sync to HealthGait + Apple Watch data
+3. Claude AI trend analysis + clinical narrative
+4. ClinicalSwipe physician attestation
+5. RTM billing: $94-170/mo per patient
+
+## Links
+- HealthGait: https://healthgait.com
+- SurgeonValue: https://surgeonvalue.com
+- co-op.care: https://co-op.care
+- SolvingHealth: https://solvinghealth.com

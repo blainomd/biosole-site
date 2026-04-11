@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIO_SOLE.AI — Smart Insole Gait Analysis</title>
+<meta name="description" content="AI-powered smart insoles that measure gait, predict falls, and generate billable RTM data. The hardware layer for clinical gait intelligence.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  'bio-navy': '#133064', 'bio-cyan': '#31B2C0', 'bio-teal': '#00D2BA',
+  'bio-dark': '#0A1929', 'bio-light': '#E8F8F8'
+}}}}
+</script>
+<style>
+body { font-family: 'Inter', sans-serif; }
+.glow { box-shadow: 0 0 60px rgba(49,178,192,0.15); }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+@keyframes pulse-glow { 0%,100% { box-shadow: 0 0 20px rgba(0,210,186,0.2); } 50% { box-shadow: 0 0 40px rgba(0,210,186,0.4); } }
+</style>
+</head>
+<body class="bg-bio-dark text-white">
+
+<!-- Nav -->
+<header class="fixed top-0 w-full z-50" style="background:rgba(10,25,41,0.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(49,178,192,0.1);">
+<div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-bio-cyan text-2xl">👣</span>
+<span class="text-lg font-bold tracking-tight">BIO_SOLE<span class="text-bio-teal">.AI</span></span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a href="#science" class="text-sm text-white/50 hover:text-bio-cyan transition-colors">Science</a>
+<a href="#pipeline" class="text-sm text-white/50 hover:text-bio-cyan transition-colors">Pipeline</a>
+<a href="#revenue" class="text-sm text-white/50 hover:text-bio-cyan transition-colors">Revenue</a>
+<a href="https://healthgait.com" class="text-sm text-white/50 hover:text-bio-cyan transition-colors">HealthGait</a>
+</nav>
+<a href="https://surgeonvalue.com" class="text-sm font-bold px-5 py-2 rounded-full bg-bio-cyan text-bio-dark" style="text-decoration:none;">For Surgeons</a>
+</div>
+</header>
+
+<!-- Hero -->
+<section class="min-h-screen flex items-center justify-center px-6 pt-20 relative overflow-hidden">
+<div class="absolute inset-0" style="background:radial-gradient(ellipse at 50% 50%, rgba(49,178,192,0.08) 0%, transparent 60%);"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center">
+<div class="inline-flex items-center gap-2 bg-bio-cyan/10 border border-bio-cyan/20 rounded-full px-4 py-1.5 mb-8">
+<span class="material-symbols-outlined text-bio-cyan" style="font-size:14px;">sensors</span>
+<span class="text-xs font-semibold text-bio-cyan tracking-wider uppercase">Pressure-Mapped Intelligence</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6">
+Every step is <span class="text-bio-cyan">data.</span><br>Every step is <span class="text-bio-teal">revenue.</span>
+</h1>
+<p class="text-xl text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed">
+Smart insoles that measure gait pressure, predict falls before they happen, and generate billable RTM documentation — all from the ground up.
+</p>
+<div class="flex flex-wrap gap-4 justify-center">
+<a href="#pipeline" class="inline-flex items-center gap-2 bg-bio-cyan text-bio-dark font-bold px-8 py-4 rounded-full text-base" style="text-decoration:none;">
+See the pipeline <span class="material-symbols-outlined" style="font-size:18px;">arrow_downward</span>
+</a>
+<a href="https://surgeonvalue.com/cjr-x" class="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-white font-semibold px-8 py-4 rounded-full text-base" style="text-decoration:none;">
+CJR-X readiness
+</a>
+</div>
+</div>
+</section>
+
+<!-- Science -->
+<section id="science" class="py-24 px-6" style="background:linear-gradient(180deg,#0A1929 0%,#0D2137 100%);">
+<div class="max-w-5xl mx-auto">
+<p class="text-xs font-bold uppercase tracking-[0.2em] text-bio-cyan/50 mb-4">The Science</p>
+<h2 class="text-4xl font-bold mb-6">256 pressure sensors.<br>One clinical picture.</h2>
+<p class="text-white/50 text-lg max-w-2xl mb-16 leading-relaxed">Each insole contains a grid of pressure sensors sampling at 100Hz. Every footstrike generates a plantar pressure map that reveals asymmetry, instability, and deterioration invisible to the naked eye.</p>
+
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-white/5 rounded-2xl p-8 glow">
+<div class="w-12 h-12 bg-bio-cyan/10 rounded-xl flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-bio-cyan">footprint</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Plantar Pressure Map</h3>
+<p class="text-white/40 text-sm leading-relaxed">Real-time visualization of weight distribution across the foot. Detects forefoot overloading, heel strike asymmetry, and midfoot collapse.</p>
+</div>
+<div class="bg-white/5 rounded-2xl p-8 glow">
+<div class="w-12 h-12 bg-bio-teal/10 rounded-xl flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-bio-teal">timeline</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Temporal Gait Analysis</h3>
+<p class="text-white/40 text-sm leading-relaxed">Stance phase, swing phase, double support time, cadence. Millisecond precision reveals neurological and musculoskeletal patterns.</p>
+</div>
+<div class="bg-white/5 rounded-2xl p-8 glow">
+<div class="w-12 h-12 bg-bio-cyan/10 rounded-xl flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-bio-cyan">psychology</span>
+</div>
+<h3 class="text-lg font-bold mb-2">AI Pattern Recognition</h3>
+<p class="text-white/40 text-sm leading-relaxed">Claude analyzes pressure trends over weeks. Detects pre-fall gait deterioration 3-4 weeks before a clinical event. Physician attests via ClinicalSwipe.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pipeline -->
+<section id="pipeline" class="py-24 px-6 bg-bio-dark">
+<div class="max-w-4xl mx-auto text-center">
+<p class="text-xs font-bold uppercase tracking-[0.2em] text-bio-teal/50 mb-4">The Pipeline</p>
+<h2 class="text-4xl font-bold mb-16">Insole → Claude → Physician → Revenue</h2>
+
+<div class="flex flex-col gap-0 max-w-md mx-auto text-left">
+<div class="flex gap-4 py-6 border-b border-white/5">
+<div class="w-10 h-10 rounded-full bg-bio-cyan/10 flex items-center justify-center shrink-0 text-bio-cyan font-bold text-sm">1</div>
+<div>
+<div class="font-bold">Patient walks normally</div>
+<div class="text-white/40 text-sm mt-1">BioSole insoles collect pressure data passively during daily activity. No buttons, no app interaction.</div>
+</div>
+</div>
+<div class="flex gap-4 py-6 border-b border-white/5">
+<div class="w-10 h-10 rounded-full bg-bio-cyan/10 flex items-center justify-center shrink-0 text-bio-cyan font-bold text-sm">2</div>
+<div>
+<div class="font-bold">Data syncs via Bluetooth</div>
+<div class="text-white/40 text-sm mt-1">Pressure maps upload to HealthGait when the patient is near their phone. Combines with Apple Watch gait metrics.</div>
+</div>
+</div>
+<div class="flex gap-4 py-6 border-b border-white/5">
+<div class="w-10 h-10 rounded-full bg-bio-teal/10 flex items-center justify-center shrink-0 text-bio-teal font-bold text-sm">3</div>
+<div>
+<div class="font-bold">Claude analyzes trends</div>
+<div class="text-white/40 text-sm mt-1">AI detects asymmetry progression, pressure redistribution, and pre-fall patterns. Generates clinical narrative with CPT codes.</div>
+</div>
+</div>
+<div class="flex gap-4 py-6 border-b border-white/5">
+<div class="w-10 h-10 rounded-full bg-bio-teal/10 flex items-center justify-center shrink-0 text-bio-teal font-bold text-sm">4</div>
+<div>
+<div class="font-bold">Physician attests</div>
+<div class="text-white/40 text-sm mt-1">ClinicalSwipe review card. Physician confirms clinical significance. 30-second attestation, not 30-minute chart review.</div>
+</div>
+</div>
+<div class="flex gap-4 py-6">
+<div class="w-10 h-10 rounded-full bg-bio-cyan flex items-center justify-center shrink-0 text-bio-dark font-bold text-sm">$</div>
+<div>
+<div class="font-bold text-bio-cyan">RTM 98975-98981 billed</div>
+<div class="text-white/40 text-sm mt-1">$94-170/month per monitored patient. From data the insole collects while the patient lives their life.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Revenue -->
+<section id="revenue" class="py-24 px-6" style="background:linear-gradient(135deg,#31B2C0 0%,#00D2BA 100%);">
+<div class="max-w-4xl mx-auto text-center text-bio-dark">
+<h2 class="text-4xl font-black mb-4">The math is simple.</h2>
+<p class="text-bio-dark/60 text-lg mb-12">Every insole-equipped patient generates passive revenue for the surgeon.</p>
+
+<div class="grid md:grid-cols-3 gap-6 mb-12">
+<div class="bg-white/30 backdrop-blur-xl rounded-2xl p-8">
+<div class="text-5xl font-black">100</div>
+<div class="text-bio-dark/50 text-sm mt-2">post-surgical patients</div>
+</div>
+<div class="bg-white/30 backdrop-blur-xl rounded-2xl p-8">
+<div class="text-5xl font-black">$94</div>
+<div class="text-bio-dark/50 text-sm mt-2">RTM per patient/month</div>
+</div>
+<div class="bg-white/30 backdrop-blur-xl rounded-2xl p-8">
+<div class="text-5xl font-black">$113K</div>
+<div class="text-bio-dark/50 text-sm mt-2">annual new revenue</div>
+</div>
+</div>
+
+<p class="text-bio-dark/60 mb-8">The surgeon does nothing extra. The insole collects. Claude analyzes. The physician attests. Revenue appears.</p>
+<a href="https://surgeonvalue.com" class="inline-flex items-center gap-2 bg-bio-dark text-white font-bold px-8 py-4 rounded-full text-base" style="text-decoration:none;">
+See SurgeonValue <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
+</a>
+</div>
+</section>
+
+<!-- Ecosystem -->
+<section class="py-16 px-6 bg-bio-dark border-t border-white/5">
+<div class="max-w-4xl mx-auto text-center">
+<p class="text-xs font-bold uppercase tracking-[0.15em] text-white/15 mb-6">Part of the SolvingHealth ecosystem</p>
+<div class="flex flex-wrap justify-center gap-6 mb-8">
+<a href="https://healthgait.com" class="text-sm text-white/20 hover:text-bio-cyan transition-colors" style="text-decoration:none;">HealthGait</a>
+<a href="https://surgeonvalue.com" class="text-sm text-white/20 hover:text-bio-cyan transition-colors" style="text-decoration:none;">SurgeonValue</a>
+<a href="https://co-op.care" class="text-sm text-white/20 hover:text-bio-cyan transition-colors" style="text-decoration:none;">co-op.care</a>
+<a href="https://fallrisks.com" class="text-sm text-white/20 hover:text-bio-cyan transition-colors" style="text-decoration:none;">FallRisks</a>
+<a href="https://solvinghealth.com" class="text-sm text-white/20 hover:text-bio-cyan transition-colors" style="text-decoration:none;">SolvingHealth</a>
+</div>
+<p class="text-white/10 text-xs">Physician-governed AI. HIPAA compliant. SolvingHealth LLC.</p>
+</div>
+</section>
+
+<script src="https://solvinghealth.com/chat-widget.js" data-channel="biosole" data-color="#31B2C0" defer></script>
+<script src="https://solvinghealth.com/voice-embed.js" data-site="biosole" defer></script>
+</body>
+</html>

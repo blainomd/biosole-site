@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BioSole - Device Pairing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#a0f6ac",
+                        "secondary-container": "#424750",
+                        "on-primary-container": "#003814",
+                        "secondary-fixed-dim": "#c2c6d1",
+                        "primary-container": "#56a866",
+                        "secondary-fixed": "#dee2ed",
+                        "on-primary": "#003915",
+                        "surface": "#00161d",
+                        "surface-dim": "#00161d",
+                        "surface-container-highest": "#1a3942",
+                        "on-primary-fixed": "#002109",
+                        "tertiary-fixed": "#abf4b3",
+                        "on-secondary-fixed": "#171c23",
+                        "tertiary-container": "#61a66c",
+                        "secondary": "#c2c6d1",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#15343e",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed": "#002109",
+                        "background": "#00161d",
+                        "on-secondary-fixed-variant": "#424750",
+                        "on-background": "#c8e8f4",
+                        "on-tertiary-fixed-variant": "#045223",
+                        "tertiary": "#90d799",
+                        "on-surface-variant": "#bfc9bc",
+                        "surface-bright": "#1f3d47",
+                        "surface-variant": "#1a3942",
+                        "surface-container-lowest": "#001016",
+                        "surface-tint": "#85d992",
+                        "on-secondary-container": "#b1b5bf",
+                        "surface-container-high": "#0e2e37",
+                        "primary": "#85d992",
+                        "surface-container-low": "#001f27",
+                        "on-tertiary": "#003915",
+                        "on-secondary": "#2c3139",
+                        "on-error": "#690005",
+                        "on-tertiary-container": "#003815",
+                        "on-primary-fixed-variant": "#005321",
+                        "outline": "#899487",
+                        "on-surface": "#c8e8f4",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#85d992",
+                        "tertiary-fixed-dim": "#90d799",
+                        "surface-container": "#01232c",
+                        "inverse-primary": "#146d32",
+                        "outline-variant": "#40493f",
+                        "inverse-surface": "#c8e8f4"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-blur {
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+<!-- TopAppBar: Suppressed Navigation for focused Onboarding journey -->
+<header class="bg-[#00161d] flex justify-between items-center px-6 py-4 w-full sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#85d992]" data-icon="bolt">bolt</span>
+<h1 class="text-xl font-manrope font-black tracking-tighter text-[#85d992]">BioSole</h1>
+</div>
+<button class="text-slate-400 font-medium text-sm hover:text-[#85d992] transition-colors">Help</button>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center px-6 pt-4 pb-24 max-w-2xl mx-auto w-full relative overflow-hidden">
+<!-- Decorative Background Element -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-24 w-80 h-80 bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+<!-- Hero Section: Editorial Typography -->
+<div class="w-full mb-12 text-center md:text-left">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary font-bold mb-2 block">Step 01 of 03</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-on-surface">
+                Initialize Your <span class="text-primary italic">Movement.</span>
+</h2>
+<p class="text-on-surface-variant mt-4 text-lg max-w-md">Connect your BioSole smart insoles to unlock real-time biomechanical insights.</p>
+</div>
+<!-- Product Showcase: Asymmetrical Layout -->
+<div class="relative w-full aspect-[4/3] md:aspect-video mb-12 group">
+<div class="absolute inset-0 bg-surface-container-high rounded-[2rem] transform rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-surface-container-highest/50 to-transparent rounded-[2rem] border border-outline-variant/10"></div>
+<div class="relative h-full w-full flex items-center justify-center p-8">
+<img alt="Smart Insole Device" class="w-full h-full object-contain transform -rotate-6 group-hover:rotate-0 transition-transform duration-700 drop-shadow-[0_20px_50px_rgba(133,217,146,0.15)]" data-alt="High-tech minimalist smart shoe insoles with visible sensor patterns glowing in neon green against a dark atmospheric studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_5_dSIvHvi-O6DaueucAYMPGETmuOIsNKmuKbYaFFTj8_oBitBSLFJcpHNFoU2eN_079WC8uXJbaWxWY-rGfpY4NW4HEJtv87flPSKCq-XHXWfRx9OK0RIiTclB3Pzonmr2TMUb52efLCd_qtBv8Z1L8QLdoG1gLr2afRt5eva2JQOt3XXQDRDFEHQn_WB-18qLUZYi18vKkzvQBdO0xsjpNsznqVuBRQmWbNFsOuYqgp4FQnsI-aROWadn1aTlJBL__KuoTFXof9"/>
+</div>
+<!-- Floating Metric Chips -->
+<div class="absolute top-8 left-8 bg-surface-container-highest/80 kinetic-blur rounded-xl px-4 py-3 border border-outline-variant/10 shadow-2xl">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="bluetooth">bluetooth</span>
+<span class="font-label text-xs font-bold tracking-wider text-on-surface uppercase">Ready to pair</span>
+</div>
+</div>
+<div class="absolute bottom-8 right-8 bg-surface-container-highest/80 kinetic-blur rounded-xl px-4 py-3 border border-outline-variant/10 shadow-2xl">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="battery_charging_full">battery_charging_full</span>
+<span class="font-label text-xs font-bold tracking-wider text-on-surface uppercase">98% Charged</span>
+</div>
+</div>
+</div>
+<!-- Instruction Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-12">
+<!-- Step 1 Card -->
+<div class="bg-surface-container-low p-6 rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="power_settings_new">power_settings_new</span>
+</div>
+<div class="relative z-10">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<span class="text-primary font-bold">1</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface mb-2">Power On</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Press and hold the button on the heel of each insole for 3 seconds until the green light pulses.</p>
+</div>
+</div>
+<!-- Step 2 Card -->
+<div class="bg-surface-container-low p-6 rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="vibration">vibration</span>
+</div>
+<div class="relative z-10">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<span class="text-primary font-bold">2</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface mb-2">Enable Bluetooth</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Ensure your phone's Bluetooth is active and keep your BioSoles within 3 feet of your device.</p>
+</div>
+</div>
+</div>
+<!-- Primary Action CTA -->
+<div class="w-full max-w-sm">
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-headline font-extrabold py-5 rounded-full shadow-[0_8px_32px_rgba(133,217,146,0.3)] transition-all active:scale-95 flex items-center justify-center gap-3 group">
+<span>Connect Device</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center text-slate-500 text-xs mt-6 font-medium tracking-wide uppercase">
+                Pairing via Secure Bio-Link Protocol
+            </p>
+</div>
+</main>
+<!-- Bottom Navigation Suppressed for Onboarding context -->
+<!-- Content prioritizes the focused "Connect Device" journey -->
+<footer class="mt-auto py-8 text-center px-6">
+<p class="text-slate-600 text-xs font-label">
+            By connecting, you agree to our <a class="underline hover:text-primary transition-colors" href="#">Data Privacy Policy</a> for biometric scanning.
+        </p>
+</footer>
+</body></html>
